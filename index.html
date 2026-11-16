@@ -4,40 +4,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f7ff">
-  <title>KnowledgeNestEDU — learn, then play</title>
+  <title>KnowledgeNestEDU — your learning space</title>
   <style>
-    :root{color-scheme:light;--ink:#202447;--muted:#69708e;--purple:#6857e8;--purple-dark:#5141c7;--mint:#dff8ef;--line:#e6e8f4;--paper:#fff;--bg:#f6f7ff;--shadow:0 18px 50px #33356a12}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#ecebff 0,transparent 34rem),var(--bg);color:var(--ink);font:16px/1.5 ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1120px;margin:auto;padding:28px 22px 60px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;font-size:1.15rem;letter-spacing:-.03em}.logo{width:42px;height:42px;border-radius:14px;background:var(--purple);display:grid;place-items:center;color:#fff;font-size:23px;box-shadow:0 8px 18px #6857e844}.pill{border:1px solid #dcdff0;border-radius:999px;background:#fff;padding:8px 13px;color:var(--muted);font-size:.85rem}.hero{max-width:750px;margin:0 auto 34px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 12px;background:#fff;border:1px solid var(--line);font-size:.78rem;color:var(--purple-dark);font-weight:750}.hero h1{font-size:clamp(2.4rem,7vw,4.7rem);line-height:1.02;letter-spacing:-.065em;margin:19px 0 15px}.hero h1 span{color:var(--purple)}.hero p{color:var(--muted);font-size:1.08rem;max-width:600px;margin:auto}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:var(--shadow)}.card-head{display:flex;justify-content:space-between;align-items:start;gap:14px;margin-bottom:20px}.card h2{font-size:1.2rem;letter-spacing:-.03em;margin:0}.sub{color:var(--muted);font-size:.9rem;margin:5px 0 0}.counter{white-space:nowrap;background:#f0efff;color:var(--purple-dark);border-radius:13px;padding:8px 11px;font-size:.85rem;font-weight:800}.progress{height:8px;background:#eeeff7;border-radius:9px;overflow:hidden;margin:18px 0 22px}.progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,#8173ff,#54c9a0);border-radius:9px;transition:width .25s}.question{font-weight:750;font-size:1.3rem;letter-spacing:-.025em;min-height:60px;margin:0 0 16px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{border:1px solid var(--line);background:#fff;text-align:left;padding:13px 15px;border-radius:14px;color:var(--ink);transition:.15s}.answer:hover:not(:disabled){border-color:#aaa1ff;background:#f8f7ff;transform:translateY(-1px)}.answer:disabled{cursor:default}.answer.correct{border-color:#59c99e;background:#edfff7;color:#18724e}.answer.wrong{border-color:#f1a4a4;background:#fff5f5;color:#a74141}.feedback{min-height:26px;margin:12px 0 0;font-size:.9rem;font-weight:700;color:var(--muted)}.feedback.good{color:#168458}.feedback.bad{color:#b24b4b}.calc-screen{background:#f7f7fd;border:1px solid var(--line);border-radius:17px;padding:16px;margin:16px 0 12px;text-align:right}.calc-expr{height:22px;color:var(--muted);font-size:.85rem;overflow:hidden}.calc-value{font-size:2rem;font-weight:800;letter-spacing:-.04em;min-height:48px;overflow:hidden}.keypad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.key{border:0;background:#f1f2fa;color:var(--ink);border-radius:13px;padding:12px 6px;font-weight:750;transition:.15s}.key:hover{background:#e8e7ff}.key.op{background:#f0efff;color:var(--purple-dark)}.key.equals{background:var(--purple);color:white}.calc-tip{font-size:.82rem;color:var(--muted);margin:14px 0 0}.unlock-hint{margin-top:16px;padding:12px 14px;border:1px dashed #d9d7f0;border-radius:14px;background:#fafaff;color:var(--muted);font-size:.84rem}.unlock-hint strong{color:var(--ink)}.game-card{grid-column:1/-1}.locked-state{display:flex;gap:14px;align-items:center;background:#fafaff;border:1px dashed #d9d7f0;border-radius:18px;padding:19px}.lock-icon{width:44px;height:44px;background:#f0efff;border-radius:14px;display:grid;place-items:center;font-size:22px;flex:none}.locked-state p{margin:4px 0 0;color:var(--muted);font-size:.9rem}.game-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:15px 0}.upload{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;border-radius:13px;padding:11px 15px;font-weight:750;cursor:pointer}.upload:hover{background:var(--purple-dark)}.upload input{position:absolute;width:1px;height:1px;opacity:0}.secondary{border:1px solid var(--line);background:white;color:var(--ink);border-radius:13px;padding:10px 14px;font-weight:700}.filename{color:var(--muted);font-size:.88rem}.game-frame{display:none;min-height:420px;overflow:hidden;border-radius:16px;background:#11131a}.game-frame.active{display:block}.game-frame #game{width:100%;height:520px;max-height:70vh}.notice{font-size:.84rem;color:var(--muted);margin:12px 0 0}.hidden{display:none!important}.footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:27px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#222447;color:white;border-radius:12px;padding:11px 16px;opacity:0;pointer-events:none;transition:.2s;box-shadow:var(--shadow);z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:780px){.layout{grid-template-columns:1fr}.game-card{grid-column:auto}.topbar{margin-bottom:35px}.card{padding:21px}}@media(max-width:440px){.shell{padding:18px 13px 40px}.answers{grid-template-columns:1fr}.card-head{align-items:center}}
+    :root{color-scheme:light;--ink:#202447;--muted:#69708e;--purple:#6857e8;--purple-dark:#5141c7;--line:#e6e8f4;--paper:#fff;--bg:#f6f7ff;--shadow:0 18px 50px #33356a12}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 10% 0%,#ecebff 0,transparent 34rem),var(--bg);color:var(--ink);font:16px/1.5 ui-rounded,"Segoe UI",system-ui,-apple-system,sans-serif}button,input{font:inherit}button{cursor:pointer}.shell{max-width:1120px;margin:auto;padding:28px 22px 60px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:48px}.brand{display:flex;align-items:center;gap:12px;font-weight:850;font-size:1.15rem;letter-spacing:-.03em}.logo{width:42px;height:42px;border-radius:14px;background:var(--purple);display:grid;place-items:center;color:#fff;font-size:23px;box-shadow:0 8px 18px #6857e844}.pill{border:1px solid #dcdff0;border-radius:999px;background:#fff;padding:8px 13px;color:var(--muted);font-size:.85rem}.hero{max-width:750px;margin:0 auto 34px;text-align:center}.eyebrow{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:7px 12px;background:#fff;border:1px solid var(--line);font-size:.78rem;color:var(--purple-dark);font-weight:750}.hero h1{font-size:clamp(2.4rem,7vw,4.7rem);line-height:1.02;letter-spacing:-.065em;margin:19px 0 15px}.hero h1 span{color:var(--purple)}.hero p{color:var(--muted);font-size:1.08rem;max-width:600px;margin:auto}.layout{display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:start}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:25px;box-shadow:var(--shadow)}.card-head{display:flex;justify-content:space-between;align-items:start;gap:14px;margin-bottom:20px}.card h2{font-size:1.2rem;letter-spacing:-.03em;margin:0}.sub{color:var(--muted);font-size:.9rem;margin:5px 0 0}.counter{white-space:nowrap;background:#f0efff;color:var(--purple-dark);border-radius:13px;padding:8px 11px;font-size:.85rem;font-weight:800}.progress{height:8px;background:#eeeff7;border-radius:9px;overflow:hidden;margin:18px 0 22px}.progress span{height:100%;display:block;width:0;background:linear-gradient(90deg,#8173ff,#54c9a0);border-radius:9px;transition:width .25s}.question{font-weight:750;font-size:1.3rem;letter-spacing:-.025em;min-height:60px;margin:0 0 16px}.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}.answer{border:1px solid var(--line);background:#fff;text-align:left;padding:13px 15px;border-radius:14px;color:var(--ink);transition:.15s}.answer:hover:not(:disabled){border-color:#aaa1ff;background:#f8f7ff;transform:translateY(-1px)}.answer:disabled{cursor:default}.answer.correct{border-color:#59c99e;background:#edfff7;color:#18724e}.answer.wrong{border-color:#f1a4a4;background:#fff5f5;color:#a74141}.feedback{min-height:26px;margin:12px 0 0;font-size:.9rem;font-weight:700;color:var(--muted)}.feedback.good{color:#168458}.feedback.bad{color:#b24b4b}.calc-screen{background:#f7f7fd;border:1px solid var(--line);border-radius:17px;padding:16px;margin:16px 0 12px;text-align:right}.calc-expr{height:22px;color:var(--muted);font-size:.85rem;overflow:hidden}.calc-value{font-size:2rem;font-weight:800;letter-spacing:-.04em;min-height:48px;overflow:hidden}.keypad{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.key{border:0;background:#f1f2fa;color:var(--ink);border-radius:13px;padding:12px 6px;font-weight:750;transition:.15s}.key:hover{background:#e8e7ff}.key.op{background:#f0efff;color:var(--purple-dark)}.key.equals{background:var(--purple);color:white}.calc-tip{font-size:.82rem;color:var(--muted);margin:14px 0 0}.game-card{grid-column:1/-1}.locked-state{display:flex;gap:14px;align-items:center;background:#fafaff;border:1px dashed #d9d7f0;border-radius:18px;padding:19px}.lock-icon{width:44px;height:44px;background:#f0efff;border-radius:14px;display:grid;place-items:center;font-size:22px;flex:none}.locked-state p{margin:4px 0 0;color:var(--muted);font-size:.9rem}.game-tools{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:15px 0}.upload{display:inline-flex;align-items:center;gap:8px;background:var(--purple);color:#fff;border-radius:13px;padding:11px 15px;font-weight:750;cursor:pointer}.upload:hover{background:var(--purple-dark)}.upload input{position:absolute;width:1px;height:1px;opacity:0}.secondary{border:1px solid var(--line);background:white;color:var(--ink);border-radius:13px;padding:10px 14px;font-weight:700}.filename{color:var(--muted);font-size:.88rem}.game-frame{display:none;min-height:420px;overflow:hidden;border-radius:16px;background:#11131a}.game-frame.active{display:block}.game-frame #game{width:100%;height:520px;max-height:70vh}.notice{font-size:.84rem;color:var(--muted);margin:12px 0 0}.hidden{display:none!important}.footer{text-align:center;color:var(--muted);font-size:.82rem;margin-top:27px}.toast{position:fixed;bottom:22px;left:50%;transform:translate(-50%,20px);background:#222447;color:white;border-radius:12px;padding:11px 16px;opacity:0;pointer-events:none;transition:.2s;box-shadow:var(--shadow);z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:780px){.layout{grid-template-columns:1fr}.game-card{grid-column:auto}.topbar{margin-bottom:35px}.card{padding:21px}}@media(max-width:440px){.shell{padding:18px 13px 40px}.answers{grid-template-columns:1fr}.card-head{align-items:center}}
   </style>
 </head>
 <body>
   <main class="shell">
     <header class="topbar"><div class="brand"><div class="logo" aria-hidden="true">✦</div>KnowledgeNestEDU</div><div class="pill">Your progress saves on this device</div></header>
-    <section class="hero"><div class="eyebrow">🌱 LEARN A LITTLE, GROW A LOT</div><h1>A curious mind<br>is a <span>powerful thing.</span></h1><p>Practice a few questions, track your progress, and unlock a little game time when you reach your learning goal.</p></section>
+    <section class="hero"><div class="eyebrow">📚 YOUR PERSONAL LEARNING SPACE</div><h1>Welcome to your<br><span>learning hub.</span></h1><p>Build your skills with quick practice, keep track of your progress, and explore more activities at your own pace.</p></section>
     <section class="layout" aria-label="Learning activities">
       <article class="card" aria-labelledby="quiz-title">
-        <div class="card-head"><div><h2 id="quiz-title">Quick practice</h2><p class="sub">Get 50 questions right to unlock the game.</p></div><div class="counter"><span id="score">0</span> / 50</div></div>
+        <div class="card-head"><div><h2 id="quiz-title">Daily practice</h2><p class="sub">Complete 50 questions to open a bonus activity.</p></div><div class="counter"><span id="score">0</span> / 50</div></div>
         <div class="progress" role="progressbar" aria-label="Questions solved" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0"><span id="progress-fill"></span></div>
         <p class="question" id="question" aria-live="polite">Loading your first question…</p>
         <div class="answers" id="answers"></div><p class="feedback" id="feedback" aria-live="polite"></p>
       </article>
       <article class="card" aria-labelledby="calc-title">
-        <div class="card-head"><div><h2 id="calc-title">Calculator</h2><p class="sub">A handy tool for your practice.</p></div><div class="counter">123?</div></div>
+        <div class="card-head"><div><h2 id="calc-title">Calculator</h2><p class="sub">A handy tool for your studies.</p></div></div>
         <div class="calc-screen" aria-live="polite"><div class="calc-expr" id="calc-expr">&nbsp;</div><div class="calc-value" id="calc-value">0</div></div>
         <div class="keypad" id="keypad" aria-label="Calculator keys"></div>
         <p class="calc-tip">Tip: use your keyboard, too. Press Enter to calculate.</p>
-        <div class="unlock-hint"><strong>Secret challenge:</strong> enter <strong>123</strong>, then hold <strong>Enter</strong> and <strong>−</strong> together for 3 seconds.</div>
       </article>
       <article class="card game-card" aria-labelledby="game-title">
-        <div class="card-head"><div><h2 id="game-title">Game corner</h2><p class="sub">Bring a game you own and play right here.</p></div><div class="counter" id="game-status">🔒 Locked</div></div>
-        <div class="locked-state" id="locked-state"><div class="lock-icon" aria-hidden="true">🔒</div><div><strong>Keep learning to unlock game corner</strong><p>Answer 50 questions correctly, or complete the calculator secret challenge.</p></div></div>
+        <div class="card-head"><div><h2 id="game-title">Student resources</h2><p class="sub" id="resource-sub">A bonus activity is available after your practice goal.</p></div><div class="counter" id="game-status">🔒 Locked</div></div>
+        <div class="locked-state" id="locked-state"><div class="lock-icon" aria-hidden="true">📖</div><div><strong>Keep up the great work!</strong><p>Reach your learning goal to open this bonus activity.</p></div></div>
         <div id="game-content" class="hidden">
           <div class="game-tools"><label class="upload">Choose a GBA ROM<input id="rom-file" type="file" accept=".gba,.gbc,.gb,.zip,application/octet-stream,application/zip"></label><button class="secondary" id="unload-game" type="button">Close game</button><span class="filename" id="file-name">No game selected</span></div>
           <div class="game-frame" id="game-frame"><div id="game"></div></div>
-          <p class="notice">ROMs stay in your browser and are not uploaded. Use only games you have the right to play. Emulator controls and save options are available in the player menu; game saves are stored locally by the emulator.</p>
+          <p class="notice">Your file stays in this browser and is not uploaded. Use only games you have the right to play. Player save options and game saves are stored locally.</p>
         </div>
       </article>
     </section>
-    <footer class="footer">KnowledgeNestEDU · Your quiz progress is stored locally in this browser.</footer>
+    <footer class="footer">KnowledgeNestEDU · Your progress is stored locally in this browser. No account needed.</footer>
   </main>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
@@ -89,9 +88,8 @@
         [...$('answers').children].forEach(el => { el.disabled = true; if (Number(el.textContent) === currentQuestion.answer) el.classList.add('correct'); });
         if (value === currentQuestion.answer) {
           correctCount = Math.min(50, correctCount + 1);
-          $('feedback').textContent = correctCount >= 50 ? 'Amazing—you reached 50! Game corner unlocked.' : 'That’s right! Nice work.';
-          $('feedback').classList.add('good');
-          button.classList.add('correct');
+          $('feedback').textContent = correctCount >= 50 ? 'Amazing—you reached 50! Bonus activity unlocked.' : 'That’s right! Nice work.';
+          $('feedback').classList.add('good'); button.classList.add('correct');
         } else {
           $('feedback').textContent = `Not quite. The answer is ${currentQuestion.answer}. Try the next one!`;
           $('feedback').classList.add('bad'); button.classList.add('wrong');
@@ -106,7 +104,9 @@
       }
       function unlockIfReady() {
         if (correctCount >= 50 || secretUnlocked) {
-          $('locked-state').classList.add('hidden'); $('game-content').classList.remove('hidden'); $('game-status').textContent = '🔓 Unlocked';
+          $('locked-state').classList.add('hidden'); $('game-content').classList.remove('hidden');
+          $('game-status').textContent = '🔓 Available'; $('game-title').textContent = 'Game corner';
+          $('resource-sub').textContent = 'Choose a game file from your device to play.';
         }
       }
       function showToast(message) {
@@ -141,13 +141,11 @@
         button.addEventListener('click', () => calcKey(key)); $('keypad').append(button);
       });
       function heldKeysUpdate() {
-        const enterHeld = held.has('Enter');
-        const minusHeld = held.has('-');
-        if (enterHeld && minusHeld && calcValue === '123' && !secretUnlocked) {
+        if (held.has('Enter') && held.has('-') && calcValue === '123' && !secretUnlocked) {
           if (!secretTimer) {
             secretTimer = setTimeout(() => {
               if (held.has('Enter') && held.has('-') && calcValue === '123') {
-                secretUnlocked = true; persist(); unlockIfReady(); showToast('Secret challenge complete! Game corner unlocked.');
+                secretUnlocked = true; persist(); unlockIfReady(); showToast('Bonus activity unlocked!');
               }
               secretTimer = null;
             }, 3000);
@@ -155,7 +153,10 @@
         } else if (secretTimer) { clearTimeout(secretTimer); secretTimer = null; }
       }
       window.addEventListener('keydown', event => {
-        if (event.key === 'Enter' || event.key === '-') { held.add(event.key); heldKeysUpdate(); }
+        if (event.key === 'Enter' || event.key === '-') {
+          held.add(event.key); heldKeysUpdate();
+          if (held.has('Enter') && held.has('-') && calcValue === '123') { event.preventDefault(); return; }
+        }
         if (document.activeElement?.closest('#keypad')) return;
         if (/^\d$/.test(event.key)) calcKey(event.key);
         else if (event.key === 'Backspace') { event.preventDefault(); calcKey('⌫'); }
@@ -181,7 +182,7 @@
         window.EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
         window.EJS_startOnLoaded = true;
         const loader = document.createElement('script'); loader.src = `${window.EJS_pathtodata}loader.js`; loader.async = true;
-        loader.onerror = () => showToast('Could not load the emulator. Check your connection and try again.');
+        loader.onerror = () => showToast('Could not load the player. Check your connection and try again.');
         $('game').append(loader);
       });
       $('unload-game').addEventListener('click', stopEmulator);
